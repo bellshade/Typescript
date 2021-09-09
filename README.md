@@ -1,4 +1,4 @@
-## TypeScript
+# TypeScript
 
 Repositori ini berisi kumpulan dari berbagai macam *script* struktur data, algoritma, analisis matematika dan sebagainya yang diimplementasikan dengan menggunakan bahasa pemrograman TypeScript.
 
