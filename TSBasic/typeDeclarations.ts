@@ -37,6 +37,7 @@
 // any - Sebuah tipe data yang mengizinkan tipe data apapun
 // void - Merepresentasikan "nothing", dapat digunakan sebagai return value dari sebuah fungsi. Hanya null dan undefined lah bagian dari tipe void
 // never - Sama seperti void hanya saja benar-benar tidak mengembalikan apapun
+// null - null secara implisit merupakan bagian dari setiap tipe data, kecuali "strictNullChecks" diaktifkan.
 
 // ======== Perbedaan tipe data "never" dan "void" ========
 // let something: void = null; - Tidak akan terjadi error karena null adalah bagian dari void
