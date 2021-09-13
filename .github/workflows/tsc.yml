@@ -1,6 +1,10 @@
 on:
-  push: main
-  pull_request: main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   tsc:
