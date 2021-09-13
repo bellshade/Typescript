@@ -1,9 +1,7 @@
-name: tsc
-
 on: [push, pull_request]
 
 jobs:
-  deploy:
+  tsc:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
