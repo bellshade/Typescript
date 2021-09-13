@@ -1,20 +1,29 @@
-name: Test
+name: tsc
 
-on: [push, pull_request]
+on: [push, pull_requests]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [13.x]
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Typecheck
-        uses: andoshin11/typescript-error-reporter-action@v1.0.2
+          node-version: "14.x"
+
+      - name: Cache dependencies Node
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: Install
+        run: npm i
+
+      - name: Cek
+        run: npm run cek
