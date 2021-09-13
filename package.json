@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/bellshade/TypescriptAlgorithm/issues"
   },
-  "homepage": "https://github.com/bellshade/TypescriptAlgorithm#readme"
+  "homepage": "https://github.com/bellshade/TypescriptAlgorithm#readme",
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.4",
+    "readline-sync": "^1.4.10"
+  }
 }

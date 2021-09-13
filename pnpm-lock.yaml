@@ -1,0 +1,20 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@types/readline-sync': ^1.4.4
+  readline-sync: ^1.4.10
+
+devDependencies:
+  '@types/readline-sync': 1.4.4
+  readline-sync: 1.4.10
+
+packages:
+
+  /@types/readline-sync/1.4.4:
+    resolution: {integrity: sha512-cFjVIoiamX7U6zkO2VPvXyTxbFDdiRo902IarJuPVxBhpDnXhwSaVE86ip+SCuyWBbEioKCkT4C88RNTxBM1Dw==}
+    dev: true
+
+  /readline-sync/1.4.10:
+    resolution: {integrity: sha512-gNva8/6UAe8QYepIQH/jQ2qn91Qj0B9sYjMBBs3QOB8F2CXcKgLxQaJRP76sWVRQt+QU+8fAkCbCvjjMFu7Ycw==}
+    engines: {node: '>= 0.8.0'}
+    dev: true
