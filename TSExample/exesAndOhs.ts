@@ -11,7 +11,7 @@
 
 
 function xAndO(str:string) {
-    let strArr = str.toLowerCase().split(''); //mengubah string ke lowercase dan memisahkan string menjadi array
+    let strArr:Array<string> = str.toLowerCase().split(''); //mengubah string ke lowercase dan memisahkan string menjadi array
     let xTerhitung:number = 0;
     let oTerhitung:number = 0;
 
