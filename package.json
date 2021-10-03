@@ -4,7 +4,8 @@
   "description": "Tutorial Typescript berbahasa Indonesia",
   "scripts": {
     "test": "jest",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "tl": "npm test && npm run lint"
   },
   "repository": {
     "type": "git",
