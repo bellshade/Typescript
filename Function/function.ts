@@ -37,7 +37,9 @@ function name(): <tulis-di-sini> {}
 */
 function CapitalizedName(name: string): string {
     /* 
+
     Nilai kembaliannya harus string juga. Jika tidak maka akan terjadi error
+    
     */
     return name.toUpperCase();
 }
