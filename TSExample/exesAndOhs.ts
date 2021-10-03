@@ -11,9 +11,9 @@
 
 
 function xAndO(str:string):boolean  {
-    let strArr:Array<string> = str.toLowerCase().split(''); //mengubah string ke lowercase dan memisahkan string menjadi array
-    let xTerhitung:number = 0;
-    let oTerhitung:number = 0;
+    const strArr:Array<string> = str.toLowerCase().split(''); //mengubah string ke lowercase dan memisahkan string menjadi array
+    let xTerhitung = 0;
+    let oTerhitung = 0;
 
     for(let x = 0 ;x < strArr.length; x++ ){
        if(strArr[x] === 'x'){
