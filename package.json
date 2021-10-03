@@ -1,10 +1,11 @@
 {
-  "name": "TypescriptAlgorithm",
+  "name": "bellshade-typescript",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Tutorial Typescript berbahasa Indonesia",
   "scripts": {
-    "cek": "tsc"
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "tl": "npm test && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -12,14 +13,24 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bellshade/TypescriptAlgorithm/issues"
+    "url": "https://github.com/bellshade/Typescript/issues"
   },
-  "homepage": "https://github.com/bellshade/TypescriptAlgorithm#readme",
+  "homepage": "https://github.com/bellshade/Typescript#readme",
   "devDependencies": {
-    "@types/readline-sync": "^1.4.4",
-    "readline-sync": "^1.4.10",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "babel-jest": "^27.2.4",
+    "eslint": "^7.32.0",
+    "jest": "^27.2.4",
+    "ts-node": "^10.2.1"
+  },
+  "dependencies": {
     "typescript": "^4.4.3"
   }
 }
