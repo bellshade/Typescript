@@ -3,14 +3,14 @@
 // String dapat berisi karakter apa pun
 // Contoh output:
 
-// XO("ooxx") => true
-// XO("xooxx") => false
-// XO("ooxXm") => true
-// XO("zpzpzpp") => true // ketika tidak ada 'x' dan 'o' harus mengembalikan true
-// XO("zzoo") => false
+// xAndO("ooxx") => true
+// xAndO("xooxx") => false
+// xAndO("ooxXm") => true
+// xAndO("zpzpzpp") => true // ketika tidak ada 'x' dan 'o' harus mengembalikan true
+// xAndO("zzoo") => false
 
 
-function XO(str:string) {
+function xAndO(str:string) {
     let strArr = str.toLowerCase().split(''); //mengubah string ke lowercase dan memisahkan string menjadi array
     let xTerhitung:number = 0;
     let oTerhitung:number = 0;
@@ -32,8 +32,8 @@ function XO(str:string) {
 }
 
 // cek Exes and Ohs
-console.log(XO('xo'));
-console.log(XO("xxOo"));
-console.log(XO("xxxm"));
-console.log(XO("Oo"));
-console.log(XO("ooom"));
+console.log(xAndO('xo'));
+console.log(xAndO("xxOo"));
+console.log(xAndO("xxxm"));
+console.log(xAndO("Oo"));
+console.log(xAndO("ooom"));
