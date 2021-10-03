@@ -10,7 +10,7 @@
 // xAndO("zzoo") => false
 
 
-function xAndO(str:string) {
+function xAndO(str:string):boolean  {
     let strArr:Array<string> = str.toLowerCase().split(''); //mengubah string ke lowercase dan memisahkan string menjadi array
     let xTerhitung:number = 0;
     let oTerhitung:number = 0;
