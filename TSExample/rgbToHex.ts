@@ -17,13 +17,13 @@ const rgbToHex = (red: number, green: number, blue: number) => {
   }
 
   // Kita konversikan nilai Desimmal pada warna merah, hijau, dan biru menjadi angka Hexadesimal
-  let r =
+  const r =
     red.toString(16).length > 1 ? red.toString(16) : `0${red.toString(16)}`;
-  let g =
+  const g =
     green.toString(16).length > 1
       ? green.toString(16)
       : `0${green.toString(16)}`;
-  let b =
+  const b =
     blue.toString(16).length > 1 ? blue.toString(16) : `0${blue.toString(16)}`;
 
   // Lalu kita gabungkan nilai dari R G B menjadi satu

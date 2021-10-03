@@ -1,6 +1,7 @@
 # Ignore all *.js extensions except configuration file
 *.js
 !babel.config.js
+!.eslintrc.js
 
 # Logs
 logs

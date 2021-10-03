@@ -1,0 +1,31 @@
+name: Unit Test
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+
+      - name: Cache dependencies Node
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: Install
+        run: npm i
+
+      - name: Jest Unit Test
+        run: npm test
+
+      - name: Clean module
+        run: rm -rf node_modules
