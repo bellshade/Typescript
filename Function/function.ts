@@ -36,7 +36,10 @@ nyapa(12, "Iqbal", ucapanSelamat);
 /*
     
 Di dalam Typescript, kita bisa menentukan tipe 
-data tertentu untuk nilai kembalian(return) fungsi, fitur ini juga dikenal dengan Return Type Annotations, anotasi tipe data tersebut bisa kita tambahkan setelah parameter ketika menulis fungsi
+data tertentu untuk nilai kembalian(return) fungsi,
+fitur ini juga dikenal dengan Return Type
+Annotations, anotasi tipe data tersebut bisa kita 
+tambahkan setelah parameter ketika menulis fungsi
 function name(): <tulis-di-sini> {}
     
 */
