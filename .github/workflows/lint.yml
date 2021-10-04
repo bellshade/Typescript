@@ -1,8 +1,9 @@
+name: Build
 on: [push, pull_request]
 
 jobs:
-  tsc:
-    runs-on: ubuntu-18.04
+  test:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -11,7 +12,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "16.x"
 
       - name: Cache dependencies Node
         uses: actions/cache@v1
@@ -23,5 +24,8 @@ jobs:
       - name: Install
         run: npm i
 
-      - name: Cek
-        run: npm run cek
+      - name: Lint
+        run: npm run lint
+
+      - name: Clean module
+        run: rm -rf node_modules
