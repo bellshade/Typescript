@@ -6,9 +6,9 @@
 
   function pangkatkanPerDigit(num: number):number {
     const arrayNum:string = Array.from(String(num),Number).map((value)=>{
-      return Math.pow(value,2)
+      return value ** 2
     }).join('')
-    return parseInt(arrayNum)
+    return +arrayNum
   }
 
   console.log(pangkatkanPerDigit(6162))
