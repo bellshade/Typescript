@@ -1,13 +1,16 @@
-// Memeriksa apakah string memiliki jumlah 'x' dan 'o' yang sama.
-// Metode harus mengembalikan boolean dan tidak peka huruf besar/kecil. 
-// String dapat berisi karakter apa pun
-// Contoh output:
+ /**
+  * Memeriksa apakah string memiliki jumlah 'x' dan 'o' yang sama.
+  * Metode harus mengembalikan boolean dan tidak peka huruf besar/kecil. 
+  * String dapat berisi karakter apa pun
+  * 
+  * Contoh output:
+  * xAndO("ooxx") => true
+  * xAndO("xooxx") => false
+  * xAndO("ooxXm") => true
+  * xAndO("zpzpzpp") => true // ketika tidak ada 'x' dan 'o' harus mengembalikan true
+  * xAndO("zzoo") => false
+  */ 
 
-// xAndO("ooxx") => true
-// xAndO("xooxx") => false
-// xAndO("ooxXm") => true
-// xAndO("zpzpzpp") => true // ketika tidak ada 'x' dan 'o' harus mengembalikan true
-// xAndO("zzoo") => false
 
 
 function xAndO(str:string):boolean  {
