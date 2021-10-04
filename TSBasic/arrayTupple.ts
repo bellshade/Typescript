@@ -7,7 +7,7 @@ Array
  5. Array of Object
  6. Array multi dimension
  7. Destructuring
- */
+*/
 
 /*
  1. Array of Number
@@ -30,7 +30,7 @@ Array
 */
 
 /*
- *5. Array of Object
+ 5. Array of Object
   [
     { color: 'blue', index: 1 },
     { color: 'red', index: 2 },
