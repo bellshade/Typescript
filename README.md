@@ -4,7 +4,34 @@ Repositori ini berisi kumpulan dari berbagai macam *script* struktur data, algor
 
 ## Peraturan dan Pedoman Kontribusi
 
-Dipersilahkan bila ingin melakukan open pull requets atau kontribusi pada **TypeScript**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``CONTRIBUTING.md``.
+Dipersilahkan bila ingin melakukan open pull requets atau kontribusi pada **TypeScript**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada `CONTRIBUTING.md`.
+
+## Pengenalan Dasar (Basic)
+
+- Apa sih itu TypeScript?
+
+Simplenya, TypeScript merupakan bahasa pemrograman JavaScript yang di mana dalam penulisannya kita memerlukan jenis data pada setiap `variable` atau `functionnya`.
+
+- Gimana cara aku belajar TypeScript?
+
+Sangat disarankan untuk kalian agar memahami cara memprogram menggunakan JavaScript terlebih dahulu agar kalian dapat mengerti fundamental dari JavaScript itu sendiri.
+
+- Apa sih keuntungan TypeScript dibanding JavaScript?
+
+    1. Pastinya lebih aman. Kenapa? Karena setiap variable akan dituliskan jenis datanya, contohnya:
+    
+    ```ts
+    let someNumber: number;
+
+    number = "someText" // Error, karena bukan number
+    number = 10 // ✅
+    ```
+
+    2. TypeScript mengubah file menjadi module, sehingga kamu bisa menggunakan file TypeScript pada browser maupun pada NodeJS
+
+    3. Intellsense Ready, kalau kalian menggunakan Visual Studio Code atau aplikasi code editor yang memiliki fitur intellsense, maka pemograman kalian akan lebih mudah karena akan lebih banyak snippet yang diberikan oleh code editor kalian
+    
+    ![](https://code.visualstudio.com/assets/docs/editor/intellisense/intellisense_docs.gif)
 
 ## Quick Access
 
