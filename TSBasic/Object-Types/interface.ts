@@ -22,16 +22,26 @@ interface Pelajar { // interface dengan nama Pelajar
     nama: string; // pada interface ini, dan object yang memiliki tipe data interface Pelajar akan mempunyai key object nama dengan tipe data string
     umur: number; // key object umur dengan tipe data number (nomor)
     sudahDiVaksin?: boolean; // key object dengan nama sudahDiVaksin dengan tipe data boolean, dan menggunakan `?` (tanda tanya) yang berarti ada kemungkinan data ini bukan boolean melainkan undefined
+    
+    // kita juga dapat mendefinisikan fungsi dalam interface jika pada variable object membutuhkan sebuah fungsi!
+    getNamaPelajar(): string; // artinya pada object yang akan di assign pada interface Pelajar akan memiliki fungsi bernama getNamaPelajar yang mengeluarkan tipe data string
+
 }
 
 let Udin: Pelajar = {
     nama: "Udin",
-    umur: 19
+    umur: 19,
+    getNamaPelajar: function() {
+        return this.nama
+    }
     // key object sudahDiVaksin tidak ada dan tidak terjadi error disini tampaknya teman-teman!
 }
 
 let Udon: Pelajar = {
     nama: "Udon",
+    getNamaPelajar: function() {
+        return this.nama 
+    }
     /* 
     key object umur tidak ada dan terjadi error:
     "Property 'umur' is missing in type '{ nama: string; }' but required in type 'Pelajar'."
