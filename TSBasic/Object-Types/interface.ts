@@ -24,7 +24,7 @@ interface Pelajar { // interface dengan nama Pelajar
     sudahDiVaksin?: boolean; // key object dengan nama sudahDiVaksin dengan tipe data boolean, dan menggunakan `?` (tanda tanya) yang berarti ada kemungkinan data ini bukan boolean melainkan undefined
     
     // kita juga dapat mendefinisikan fungsi dalam interface jika pada variable object membutuhkan sebuah fungsi!
-    getNamaPelajar(): string; // artinya pada object yang akan di assign pada interface Pelajar akan memiliki fungsi bernama getNamaPelajar yang mengeluarkan tipe data string
+    getNamaPelajar(): string; // artinya pada object yang akan di definisikan tipe datanya pada interface Pelajar akan memiliki fungsi bernama getNamaPelajar yang mengeluarkan tipe data string
 
 }
 
