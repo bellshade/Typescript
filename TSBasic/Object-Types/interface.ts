@@ -39,7 +39,7 @@ let Udin: Pelajar = {
 
 let Udon: Pelajar = {
     nama: "Udon",
-    getNamaPelajar: function() {
+    getNamaPelajar() {
         return this.nama 
     }
     /* 
@@ -72,7 +72,7 @@ function PertambahanAdanB(input: ParameterFunctionPertambahanAdanB): number {  /
 /*
     keyword `extends` adalah salah satu keyword lainnya yang dapat digunakan untuk interface.
     keyword extends digunakan untuk memiliki tipe data interface yang sama.
-
+    
     Pada kode dibawah 👇👇
     kita mendefinisikan interface dengan nama registeredUser
     kita extends interface Pelajar kepada interface registeredUser, dengan demikian konten yang dimiliki interface Pelajar akan juga dimiliki oleh interface registeredUser.
@@ -96,3 +96,20 @@ function RegisterUser(user: Pelajar): registeredUser {  // mendefinisikan fungsi
         */
     }
 }
+
+/*
+fungsi RegisterUser yang ada diatas sama saja dengan yang ada dibawah, yang membedakan ialah return type.
+Fungsi dibawah tidak menggunakan interface baru sedangkan fungsi diatas menggunakan interface baru dengan menggunakan keyword `extends`, akan tetapi fungsi bawah menggunakan `&`
+
+function RegisterUser(user: Pelajar): Pelajar & {
+    dibuatPada: number; 
+} { 
+    
+    return { 
+        ...user,
+        dibuatPada: Date.now(),
+    
+    }
+}
+
+*/
