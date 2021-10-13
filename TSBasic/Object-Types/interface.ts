@@ -28,7 +28,7 @@ interface Pelajar { // interface dengan nama Pelajar
 
 }
 
-let Udin: Pelajar = {
+const Udin: Pelajar = {
     nama: "Udin",
     umur: 19,
     getNamaPelajar: function() {
@@ -37,7 +37,7 @@ let Udin: Pelajar = {
     // key object sudahDiVaksin tidak ada dan tidak terjadi error disini tampaknya teman-teman!
 }
 
-let Udon: Pelajar = {
+const Udon: Pelajar = {
     nama: "Udon",
     getNamaPelajar() {
         return this.nama 

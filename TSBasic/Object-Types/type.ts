@@ -6,7 +6,7 @@
 
 // contoh penggunaan pada tipe data variable
 type NilaiBoolean = boolean
-let benar: NilaiBoolean = true // jika kita deklarasikan variable benar ke nilai yang bukan tipe data boolean maka akan terjadi error.
+const benar: NilaiBoolean = true // jika kita deklarasikan variable benar ke nilai yang bukan tipe data boolean maka akan terjadi error.
 
 function ApakahTrue(inputBenar: NilaiBoolean) {
     return inputBenar ? "benar!" : "salah"
@@ -36,7 +36,7 @@ type Manusia = { // type dengan nama Mahasiswa
 
 }
 
-let Jordan: Manusia = {
+const Jordan: Manusia = {
     nama: "Jordan",
     umur: 20,
     getNamaMahasiswa() {
@@ -49,7 +49,7 @@ type Mahasiswa = {
     jurusan: string;
 } & Manusia // jika interface menggunakan keyword extends untuk mendapatkan konten dari interface lainnya, pada type gunakan `&` untuk mendapatkan konten dari type lainnya.
 
-let Marsaw: Mahasiswa = {
+const Marsaw: Mahasiswa = {
     nama: "Marsaw",
     umur: 20,
     getNamaMahasiswa() {
