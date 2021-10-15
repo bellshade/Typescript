@@ -99,7 +99,7 @@ function RegisterUser(user: Pelajar): registeredUser {  // mendefinisikan fungsi
 
 /*
 fungsi RegisterUser yang ada diatas sama saja dengan yang ada dibawah, yang membedakan ialah return type.
-Fungsi dibawah tidak menggunakan interface baru sedangkan fungsi diatas menggunakan interface baru dengan menggunakan keyword `extends`, akan tetapi fungsi bawah menggunakan `&`
+Fungsi di bawah tidak menggunakan interface baru sedangkan fungsi di atas menggunakan interface baru dengan menggunakan keyword `extends`, akan tetapi fungsi bawah menggunakan `&`
 
 function RegisterUser(user: Pelajar): Pelajar & {
     dibuatPada: number; 
