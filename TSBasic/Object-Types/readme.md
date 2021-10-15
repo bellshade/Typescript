@@ -2,7 +2,7 @@
 Object Types sendiri adalah tipe data untuk menentukan tipe data pada Variable, Function, Object, dan Array. Object Types terdiri dari 2 bagian yaitu `interface` dan `type`
 
 ## interface 
-interface _keyword_, dan ia adalah Object Types. Keyword ini digunakan **hanya** untuk menuntukan tipe data object, seperti variable object, function parameter yang membutuhkan object, dan function return yang mereturn object.
+interface _keyword_, dan ia adalah Object Types. Keyword ini digunakan **hanya** untuk menentukan tipe data object, seperti variable object, function parameter yang membutuhkan object, dan function return yang mereturn object.
 
 tolong lihat `interface.ts` untuk melihat contoh pengaplikasiannya.
 
