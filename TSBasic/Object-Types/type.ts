@@ -18,7 +18,7 @@ console.log(ApakahTrue(benar)) // "benar!"
 // contoh penggunaan pada tipe data function
 type fungsiPertambahan = (a: number, b: number) => number
 
-// untuk menggunakan fungsi tipe data kita harus menggunakan fungsi variable seperti dibawah ini
+// untuk menggunakan fungsi tipe data kita harus menggunakan fungsi variable seperti di bawah ini
 const ATambahB: fungsiPertambahan = (a, b) => {
     return a+b
 }
