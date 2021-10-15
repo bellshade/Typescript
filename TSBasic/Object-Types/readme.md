@@ -12,5 +12,5 @@ tolong lihat `interface.ts` untuk melihat contoh pengaplikasiannya.
 tolong lihat `type.ts` untuk melihat contoh pengaplikasiannya.
 
 ## Perbedaan interface dan Type
-Perbedaan dari keduanya ialah `interface` digunakan **hanya** untuk menuntukan tipe data object, seperti variable object. Sedangkan `type` digunakan untuk menentukan tipe data variable, tipe data function, dan tipe data object. 
+Perbedaan dari keduanya ialah `interface` digunakan **hanya** untuk menentukan tipe data object, seperti variable object. Sedangkan `type` digunakan untuk menentukan tipe data variable, tipe data function, dan tipe data object. 
 
