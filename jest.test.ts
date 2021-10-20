@@ -36,17 +36,17 @@ const checkDirectory = (mode: CheckDistMode): boolean => {
   return ret;
 };
 
-test('[JEST-CONF] Hello world', () => {
+test('Hello world', () => {
   expect(typeof 'foo' === 'string').toBe(true);
 });
 
-test('[JEST-CONF] Mengecek tiap kategori apakah memiliki file test', () => {
+test('Mengecek tiap kategori apakah memiliki file test', () => {
   // Seharusnya, apabila anda telah membuat file test.ts di bagian module
   // error ini akan tidak muncul
   expect(checkDirectory('UNIT_TEST')).not.toBe(true);
 });
 
-test('[JEST-CONF] Mengecek tiap kategori apakah memiliki file readme', () => {
+test('Mengecek tiap kategori apakah memiliki file readme', () => {
   // Seharusnya, apabila anda telah membuat file README di bagian module
   // error ini akan tidak muncul
   expect(checkDirectory('README')).not.toBe(true);

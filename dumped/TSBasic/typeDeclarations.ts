@@ -22,7 +22,7 @@
 //  {[key: string]: number} - Object dengan key bertipe data string dengan value bertipe data number
 
 // Enum. Enum memungkinkan developer untuk mendefinisikan satu set konstanta dengan nama tertentu
-//  enum Direction { Up = 1, Down, Left, Right } - Jika kita menginisialisasikan 1 pada member pertama, Maka semua member dari Enum Direction yang 
+//  enum Direction { Up = 1, Down, Left, Right } - Jika kita menginisialisasikan 1 pada member pertama, Maka semua member dari Enum Direction yang
 //                                                 belum di inisialisasikan akan secara otomatis melakukan auto-increment dari nilai 1 ke semua member
 //                                                 Dengan kata lain Direction.Up = 1, Direction.Down = 2, Direction.Left = 3, Direction.Right = 4
 //  enum Direction { Up, Down, Left, Right } - Tanpa inisialisasi pada member pertama secara default enum akan menginisialisasikan value 0
