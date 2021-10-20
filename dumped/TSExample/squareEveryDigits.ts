@@ -6,10 +6,10 @@
 
   function pangkatkanPerDigit(num: number):number {
     const arrayNum:string = Array.from(String(num),Number).map((value)=>{
-      return value ** 2
-    }).join('')
-    return +arrayNum
+      return value ** 2;
+    }).join('');
+    return +arrayNum;
   }
 
-  console.log(pangkatkanPerDigit(6162))
-  console.log(pangkatkanPerDigit(76543))
+  console.log(pangkatkanPerDigit(6162));
+  console.log(pangkatkanPerDigit(76543));

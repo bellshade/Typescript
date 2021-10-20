@@ -10,18 +10,18 @@ namespace**
 */
 function nyapa(waktu: number, nama: string, ucapanSelamat: string[]) {
     if (waktu >= 5 && waktu <= 12) {
-        console.log(`Halo ${nama}, ${ucapanSelamat[0]}`)
+        console.log(`Halo ${nama}, ${ucapanSelamat[0]}`);
     } else if (waktu >= 13 && waktu <= 15) {
-        console.log(`Halo ${nama}, ${ucapanSelamat[1]}`)
+        console.log(`Halo ${nama}, ${ucapanSelamat[1]}`);
     } else if (waktu >= 16 && waktu <= 4) {
-        console.log(`Halo ${nama}, ${ucapanSelamat[2]}`)
+        console.log(`Halo ${nama}, ${ucapanSelamat[2]}`);
     }
 }
     
 const ucapanSelamat: string[] = [
-    "Selamat Pagi",
-    "Selamat Siang",
-    "Selamat Malam"
+    'Selamat Pagi',
+    'Selamat Siang',
+    'Selamat Malam'
 ];
     
 /* 
@@ -30,7 +30,7 @@ Parameter yang dimasukkan harus memiliki tipe data
 yang sama dengan argumen fungsi di atas 
     
 */
-nyapa(12, "Iqbal", ucapanSelamat);
+nyapa(12, 'Iqbal', ucapanSelamat);
 
 
 /*
@@ -53,4 +53,4 @@ function CapitalizedName(name: string): string {
     return name.toUpperCase();
 }
 
-console.log(CapitalizedName("iqbal"));
+console.log(CapitalizedName('iqbal'));

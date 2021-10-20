@@ -13,7 +13,7 @@ Desimal memiliki 10 radix yaitu 0,1,2,3,4,5,6,7,8,9
 const rgbToHex = (red: number, green: number, blue: number) => {
   // Kita lakukan pengecekan terhadap nilai yang diberikan karena nilai RGB maksimal adalah 255
   if (red > 255 || green > 255 || blue > 255) {
-    throw Error("Nilai tidak dapat lebih dari 255");
+    throw Error('Nilai tidak dapat lebih dari 255');
   }
 
   // Kita konversikan nilai Desimmal pada warna merah, hijau, dan biru menjadi angka Hexadesimal
@@ -27,7 +27,7 @@ const rgbToHex = (red: number, green: number, blue: number) => {
     blue.toString(16).length > 1 ? blue.toString(16) : `0${blue.toString(16)}`;
 
   // Lalu kita gabungkan nilai dari R G B menjadi satu
-  return `#${[r, g, b].join("")}`;
+  return `#${[r, g, b].join('')}`;
 };
 
 console.log(rgbToHex(10, 255, 255));

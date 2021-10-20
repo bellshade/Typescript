@@ -1,12 +1,12 @@
-import {question} from "readline-sync"
+import {question} from 'readline-sync';
 
-const input: string = question("Masukkan teks yang mau dicek: ")
+const input: string = question('Masukkan teks yang mau dicek: ');
 
-const inputKecil: string = input.toLowerCase()
-const balik: string = inputKecil.split("").reverse().join("")
+const inputKecil: string = input.toLowerCase();
+const balik: string = inputKecil.split('').reverse().join('');
 
 if (inputKecil == balik){
-	console.log(`${input} PALINDROM`)
+	console.log(`${input} PALINDROM`);
 } else {
-	console.log(`${input} BUKAN PALINDROM`)
+	console.log(`${input} BUKAN PALINDROM`);
 }

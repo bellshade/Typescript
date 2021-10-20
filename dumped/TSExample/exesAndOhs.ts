@@ -27,16 +27,16 @@ function xAndO(str:string):boolean  {
     }
 
     if(xTerhitung === oTerhitung){
-      return true
+      return true;
     }else{
-      return false
+      return false;
     }
 
 }
 
 // cek Exes and Ohs
 console.log(xAndO('xo'));
-console.log(xAndO("xxOo"));
-console.log(xAndO("xxxm"));
-console.log(xAndO("Oo"));
-console.log(xAndO("ooom"));
+console.log(xAndO('xxOo'));
+console.log(xAndO('xxxm'));
+console.log(xAndO('Oo'));
+console.log(xAndO('ooom'));
