@@ -12,6 +12,48 @@ Semua boleh ikut berkontribusi walaupun hal kecil dengan pengecualian sebagai be
 - Penggunaan nama file yang bersifat **camelCase** dan berlaku juga untuk variabel dan _identifier_
 - Menggunakan output `console.log()`
 
+## Skema Folder
+
+Dalam repositori TypeScript, kami menggunakan standarisasi folder di bawah ini:
+```
+root
+|  Category1
+   |  Subcategory1
+      |  SubCategory1.ts
+      |  SubCategory1.test.ts
+      |  README.md
+   |  Subcategory2
+      |  SubCategory2.ts
+      |  SubCategory2.test.ts
+      |  Index.ts
+      |  README.md
+|  Category2
+   |  Subcategory1
+      |  SubCategory1.ts
+      |  SubCategory1.test.ts
+      |  Index.ts
+      |  README.md
+      |  Executor
+         |  Beberapa.ts
+         |  Fungsi.ts
+         |  DiSini.ts
+   |  Subcategory2
+```
+Adapun beberapa aturan untuk skema folder yang kami buat untuk menjaga kualitas kode dan teroganisasinya kode yaitu:
+1. Setiap folder **wajib** menyediakan **Unit Test** seperti pada contoh di atas.
+2. Setiap folder **wajib** menyediakan **README** untuk menjelaskan secara rinci mengenai kode tersebut.
+3. Apabila anda ingin memberikan contoh cara mengeksekusi kode yang anda jelaskan, anda dapat membuat **Index.ts** sebagai *deploy point* dari kode anda.
+
+## Unit Test
+Kami menggunakan Jest dan ESLint untuk menjaga bahwa kode yang ditulis di dalam repositori ini dapat dijalankan dengan baik dan juga kode tersebut dapat dibaca dengan mudah oleh banyak orang.
+
+Anda dapat menggunakan `npm test` untuk menggunakan Jest, `npm run lint` untuk menggunakan ESLint, ataupun `npm run tl` yang merupakan shorthand dari Jest dan ESLint.
+
+Sedikit catatan, sebaiknya kalian mengecek apakah kode anda lolos dari Unit Test dan Linter agar Pull Request anda nantinya tidak ditolak oleh Github Actions.
+
+## Gaya Penulisan
+Untuk gaya penulisan dari repositori ini, kami menggunakan TypeScript Eslint dengan beberapa modifikasi yang dapat kalian lihat aturannya [di sini](./.eslintrc.js).
+
 ## Pull Request
 
 ### Pull request yang baik
