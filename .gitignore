@@ -3,6 +3,10 @@
 !babel.config.js
 !.eslintrc.js
 
+# Ignore VSCode and VimSession
+.vscode/
+.vimsession
+
 # Logs
 logs
 *.log
