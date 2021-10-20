@@ -5,5 +5,5 @@
  * perjalanan di TypeScript!
  */
 export default function (): string {
-  return 'Hello world!'
+  return 'Hello world!';
 }
