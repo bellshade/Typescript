@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint . --ext .ts,.tsx",
-    "tl": "npm test && npm run lint"
+    "tl": "npm test && npm run lint",
+    "run": "ts-node"
   },
   "repository": {
     "type": "git",
