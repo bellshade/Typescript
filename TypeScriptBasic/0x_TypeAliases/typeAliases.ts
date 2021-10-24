@@ -6,12 +6,12 @@
 
 // Contoh
 // note: nama untuk type boleh apa saja, suka suka kalian asal masih relevan dengan valuenya
-type StringOrNumber = string | number
+type StringOrNumber = string | number;
 
-const value1: StringOrNumber = "value 1"
-const value2: StringOrNumber = 1
+const value1: StringOrNumber = 'value 1';
+const value2: StringOrNumber = 1;
 
-console.log(value1, value2)
+console.log(value1, value2);
 
 
 // ------------------- Type Aliases Membuat Code Lebih Readable ---------------------
@@ -25,17 +25,17 @@ function intro1(data: { name: string, age: number, country: string, hobby: strin
     age: ${data.age} years,
     country: ${data.country},
     hobby: ${data.hobby}
-  `
+  `;
 }
 
-intro1({name: "huda", age: 22, country: "indonesia", hobby: "ngoding"})
+intro1({name: 'huda', age: 22, country: 'indonesia', hobby: 'ngoding'});
 
 
 // solving: merefactor dengan menggunakan type aliases
-type Person = { 
-  name: string, 
-  age: number, 
-  country: string, 
+type Person = {
+  name: string,
+  age: number,
+  country: string,
   hobby: string
 }
 
@@ -46,10 +46,10 @@ function intro2(data: Person) {
     age: ${data.age} years,
     country: ${data.country},
     hobby: ${data.hobby}
-  `
+  `;
 }
 
-intro2({name: "huda", age: 22, country: "indonesia", hobby: "ngoding"})
+intro2({name: 'huda', age: 22, country: 'indonesia', hobby: 'ngoding'});
 
 
 // --------------- Menggabungkan Type Aliases Dengan Type Lain -------------------
@@ -70,14 +70,14 @@ function intro3(data: PersonWithContact) {
     hobby: ${data.hobby},
     phone number: ${data.phoneNumber},
     email: ${data.email}
-  `
+  `;
 }
 
 intro3({
-  name: "huda", 
-  age: 22, 
-  country: "indonesia", 
-  hobby: "ngoding", 
-  phoneNumber: "08111112222",
-  email: "hudaexample@gmail.com",
-})
+  name: 'huda',
+  age: 22,
+  country: 'indonesia',
+  hobby: 'ngoding',
+  phoneNumber: '08111112222',
+  email: 'hudaexample@gmail.com',
+});
