@@ -8,18 +8,12 @@
 // note: nama untuk type boleh apa saja, suka suka kalian asal masih relevan dengan valuenya
 type StringOrNumber = string | number;
 
-const value1: StringOrNumber = 'value 1';
-const value2: StringOrNumber = 1;
-
-console.log(value1, value2);
-
-
 // ------------------- Type Aliases Membuat Code Lebih Readable ---------------------
 
 // Selain untuk membuat kostum type, type aliases juga berguna untuk membuat code kita lebih mudah dibaca.
 
 // problem: parameter pada function terlalu panjang jadi sulit dibaca
-function intro1(data: { name: string, age: number, country: string, hobby: string}) {
+function intro1(data: { name: string, age: number, country: string, hobby: string}): string {
   return `
     name: ${data.name}, 
     age: ${data.age} years,
@@ -27,9 +21,6 @@ function intro1(data: { name: string, age: number, country: string, hobby: strin
     hobby: ${data.hobby}
   `;
 }
-
-intro1({name: 'huda', age: 22, country: 'indonesia', hobby: 'ngoding'});
-
 
 // solving: merefactor dengan menggunakan type aliases
 type Person = {
@@ -40,7 +31,7 @@ type Person = {
 }
 
 // Pada parameter function kita hanya perlu mengisi nama type yang telah kita buat.
-function intro2(data: Person) {
+function intro2(data: Person): string {
   return `
     name: ${data.name}, 
     age: ${data.age} years,
@@ -48,9 +39,6 @@ function intro2(data: Person) {
     hobby: ${data.hobby}
   `;
 }
-
-intro2({name: 'huda', age: 22, country: 'indonesia', hobby: 'ngoding'});
-
 
 // --------------- Menggabungkan Type Aliases Dengan Type Lain -------------------
 
@@ -62,7 +50,7 @@ type PersonWithContact = Person & {
   email: string
 }
 
-function intro3(data: PersonWithContact) {
+function intro3(data: PersonWithContact): string {
   return `
     name: ${data.name}, 
     age: ${data.age} years,
@@ -73,11 +61,4 @@ function intro3(data: PersonWithContact) {
   `;
 }
 
-intro3({
-  name: 'huda',
-  age: 22,
-  country: 'indonesia',
-  hobby: 'ngoding',
-  phoneNumber: '08111112222',
-  email: 'hudaexample@gmail.com',
-});
+export { intro1, intro2, intro3, StringOrNumber };
