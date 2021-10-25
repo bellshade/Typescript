@@ -12,8 +12,12 @@ function ApakahTrue(inputBenar: NilaiBoolean) {
     return inputBenar ? 'benar!' : 'salah';
 }
 
+<<<<<<< HEAD:TypeScriptBasic/02_Object-Types/type.ts
 
 // console.log(ApakahTrue(benar)); // "benar!"
+=======
+console.log(ApakahTrue(benar)); // "benar!"
+>>>>>>> 5960d28Branch:TSBasic/Object-Types/type.ts
 
 
 // contoh penggunaan pada tipe data function
@@ -42,7 +46,11 @@ const Jordan: Manusia = {
     getNamaMahasiswa() {
         return this.nama;
     }
+<<<<<<< HEAD:TypeScriptBasic/02_Object-Types/type.ts
     // key object sudahDiVaksin tidak ada dan tidak terjadi error di sini tampaknya teman-teman!
+=======
+    // key object sudahDiVaksin tidak ada dan tidak terjadi error disini tampaknya teman-teman!
+>>>>>>> 5960d28Branch:TSBasic/Object-Types/type.ts
 };
 
 type Mahasiswa = {
@@ -57,7 +65,11 @@ const Marsaw: Mahasiswa = {
     },
     jurusan: 'Teknik Komputer'
     // key object sudahDiVaksin tidak ada dan tidak terjadi error di sini tampaknya teman-teman!
+<<<<<<< HEAD:TypeScriptBasic/02_Object-Types/type.ts
 
 };
 
 export {Marsaw,Jordan,ATambahB,ApakahTrue};
+=======
+};
+>>>>>>> 5960d28Branch:TSBasic/Object-Types/type.ts

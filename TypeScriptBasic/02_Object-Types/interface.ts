@@ -50,6 +50,7 @@ const Udon: Pelajar = {
 
     */
     // key object sudahDiVaksin tidak ada, dan tidak terjadi error di sini tampaknya teman-teman!
+
     ,
     umur: 0
 };
@@ -66,6 +67,7 @@ function PertambahanAdanB(input: ParameterFunctionPertambahanAdanB): number {  /
 }
 /*
     Dengan mendefinisikan parameter input kepada interface ParameterFunctionPertambahanAdanB, itu sama saja dengan kode yang di bawah ini 👇👇
+
     function PertambahanAdanB(input: {a: number; b: number}): number {
     }
 */
