@@ -1,4 +1,6 @@
 # TypeScript
+![Unit Test](https://github.com/bellshade/Typescript/actions/workflows/test.yml/badge.svg)
+![Lint](https://github.com/bellshade/Typescript/actions/workflows/lint.yml/badge.svg)
 
 Repositori ini berisi kumpulan dari berbagai macam *script* struktur data, algoritma, analisis matematika dan sebagainya yang diimplementasikan dengan menggunakan bahasa pemrograman TypeScript.
 
