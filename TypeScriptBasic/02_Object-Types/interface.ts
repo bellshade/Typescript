@@ -115,3 +115,5 @@ function RegisterUser(user: Pelajar): Pelajar & {
 }
 
 */
+
+export {Pelajar, Udin, Udon, registeredUser, RegisterUser, PertambahanAdanB, ParameterFunctionPertambahanAdanB};
