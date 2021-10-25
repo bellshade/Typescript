@@ -1,5 +1,5 @@
 /**
- * Interface adalah Object Types hanya untuk menuntukan tipe data object.
+ * Interface adalah Object Types hanya untuk menentukan tipe data object.
  * seperti variable object, function parameter yang membutuhkan object, dan function return yang mengembalikan object.
  */
 
@@ -34,7 +34,7 @@ const Udin: Pelajar = {
     getNamaPelajar: function() {
         return this.nama;
     }
-    // key object sudahDiVaksin tidak ada dan tidak terjadi error disini tampaknya teman-teman!
+    // key object sudahDiVaksin tidak ada dan tidak terjadi error di sini tampaknya teman-teman!
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -49,7 +49,7 @@ const Udon: Pelajar = {
     yang artinya : "Properti 'umur' tidak ada dalam tipe '{ nama: string; }' tetapi diperlukan dalam jenis 'Pelajar'."
 
     */
-    // key object sudahDiVaksin tidak ada, dan tidak terjadi error disini tampaknya teman-teman!
+    // key object sudahDiVaksin tidak ada, dan tidak terjadi error di sini tampaknya teman-teman!
     ,
     umur: 0
 };
@@ -65,7 +65,7 @@ function PertambahanAdanB(input: ParameterFunctionPertambahanAdanB): number {  /
     return input.a + input.b;
 }
 /*
-    Dengan mendefinisikan parameter input kepada interface ParameterFunctionPertambahanAdanB, itu sama saja dengan kode yang dibawah ini 👇👇
+    Dengan mendefinisikan parameter input kepada interface ParameterFunctionPertambahanAdanB, itu sama saja dengan kode yang di bawah ini 👇👇
     function PertambahanAdanB(input: {a: number; b: number}): number {
     }
 */
@@ -75,7 +75,7 @@ function PertambahanAdanB(input: ParameterFunctionPertambahanAdanB): number {  /
     keyword `extends` adalah salah satu keyword lainnya yang dapat digunakan untuk interface.
     keyword extends digunakan untuk memiliki tipe data interface yang sama.
 
-    Pada kode dibawah 👇👇
+    Pada kode di bawah 👇👇
     kita mendefinisikan interface dengan nama registeredUser
     kita extends interface Pelajar kepada interface registeredUser, dengan demikian konten yang dimiliki interface Pelajar akan juga dimiliki oleh interface registeredUser.
 
@@ -100,7 +100,7 @@ function RegisterUser(user: Pelajar): registeredUser {  // mendefinisikan fungsi
 }
 
 /*
-fungsi RegisterUser yang ada diatas sama saja dengan yang ada dibawah, yang membedakan ialah return type.
+fungsi RegisterUser yang ada diatas sama saja dengan yang ada di bawah, yang membedakan ialah return type.
 Fungsi di bawah tidak menggunakan interface baru sedangkan fungsi di atas menggunakan interface baru dengan menggunakan keyword `extends`, akan tetapi fungsi bawah menggunakan `&`
 
 function RegisterUser(user: Pelajar): Pelajar & {

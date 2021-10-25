@@ -36,7 +36,7 @@ root
       |  Executor
          |  Beberapa.ts
          |  Fungsi.ts
-         |  DiSini.ts
+         |  di sini.ts
    |  Subcategory2
 ```
 Adapun beberapa aturan untuk skema folder yang kami buat untuk menjaga kualitas kode dan teroganisasinya kode yaitu:

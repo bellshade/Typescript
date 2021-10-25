@@ -42,7 +42,7 @@ const Jordan: Manusia = {
     getNamaMahasiswa() {
         return this.nama;
     }
-    // key object sudahDiVaksin tidak ada dan tidak terjadi error disini tampaknya teman-teman!
+    // key object sudahDiVaksin tidak ada dan tidak terjadi error di sini tampaknya teman-teman!
 };
 
 type Mahasiswa = {

@@ -1,5 +1,5 @@
 // Kalian dapat menentukan tipe data pada Variable, Function Parameter, dan Function Return.
-// Tipe data dideklarasikan setelah tanda colon/titik dua(:) pada nama variabel ceperti pada contoh dibawah ini
+// Tipe data dideklarasikan setelah tanda colon/titik dua(:) pada nama variabel ceperti pada contoh di bawah ini
 // var num: number = 5;
 // Ketika kalian mencoba untuk merubah isi variabelnya dengan tipe data lain akan terjadi error
 // num = "Ini tipe data string"; // error: Type 'string' is not assignable to type 'number'
