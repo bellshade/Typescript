@@ -12,7 +12,7 @@ function ApakahTrue(inputBenar: NilaiBoolean) {
     return inputBenar ? 'benar!' : 'salah';
 }
 
-console.log(ApakahTrue(benar)); // "benar!"
+// console.log(ApakahTrue(benar)); // "benar!"
 
 
 // contoh penggunaan pada tipe data function
@@ -57,3 +57,5 @@ const Marsaw: Mahasiswa = {
     jurusan: 'Teknik Komputer'
     // key object sudahDiVaksin tidak ada dan tidak terjadi error di sini tampaknya teman-teman!
 };
+
+export {Marsaw,Jordan,ATambahB,ApakahTrue};
