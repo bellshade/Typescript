@@ -1,8 +1,14 @@
-# TypeScript
-![Unit Test](https://github.com/bellshade/Typescript/actions/workflows/test.yml/badge.svg)
-![Lint](https://github.com/bellshade/Typescript/actions/workflows/lint.yml/badge.svg)
+# Bellshade TypeScript
+> Part of Bellshade Project, managed by [WPU Discord Community](http://discord.gg/S4rrXQU) <br>
+> WPU Community is the fastest growing software developer forum initiated by [Mr. Sandhika Galih](https://www.youtube.com/c/WebProgrammingUNPAS)
 
-Repositori ini berisi kumpulan dari berbagai macam *script* struktur data, algoritma, analisis matematika dan sebagainya yang diimplementasikan dengan menggunakan bahasa pemrograman TypeScript.
+![lisensi](https://img.shields.io/github/license/bellshade/Typescript?style=for-the-badge)
+![Unit Test](https://img.shields.io/github/workflow/status/bellshade/typescript/Unit%20Test?style=for-the-badge)
+![Build](https://img.shields.io/github/workflow/status/bellshade/typescript/Build?style=for-the-badge)
+
+Repositori ini berisi kumpulan dari berbagai macam *script* struktur data, typings, algoritma, analisis matematika dan sebagainya yang diimplementasikan dengan menggunakan bahasa pemrograman TypeScript.
+
+## 🎉🎉 Selamat Datang di TypeScript 🎉🎉
 
 ## Peraturan dan Pedoman Kontribusi
 
@@ -39,4 +45,13 @@ Sangat disarankan untuk kalian agar memahami cara memprogram menggunakan JavaScr
 
 Semua *script* yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
 
-(SOON)
+- [TypeScript Basic](./TypeScriptBasic)
+- [TypeScript Definition](./TypeScriptDefinition)
+
+## 🤩 Ayo ikut kami dan berkontribusi! 🤩 
+Bantuan kalian diperlukan! Untuk Bellshade dapat lebih jauh lagi membantu anak - anak Indonesia belajar *programming*, kita butuh tenaga kalian.
+> "Dengan Bellshade, aku jadi bisa *ngoding*! Terima kasih Bellshade!!"
+
+Kami sangat senang bila kalian ingin melakukan kontribusi pada repositori **TypeScript** ini. Tapi, sebelum itu, silahkan baca terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang telah kami siapkan. Terima kasih! 
+
+Untuk informasi lebih lanjut, mari gabung dalam komunitas [Discord Channel WPU](http://discord.gg/S4rrXQU)
