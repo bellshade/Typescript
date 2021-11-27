@@ -1,4 +1,4 @@
-# Everyday Types
+# Primitive Types
 
 ## Tipe Data Primitif
 
@@ -26,7 +26,7 @@ Tipe data statis bahasa pemrograman TypeScript lainnya adalah tipe data angka. K
 let tahunIni: number = 2021;
 ```
 
-Bahasa pemrograman TypeScript tidak membedakan antara angka integer dan float seperti bahasa lainnya dalam hal sintaksis. Sama dengan integer, berikut merupakan contoh deklarasi variabel angka float.  
+Bahasa pemrograman TypeScript tidak membedakan antara angka integer dan float seperti bahasa lainnya dalam hal sintaksis. Sama dengan integer, berikut merupakan contoh deklarasi variabel angka float.
 
 ```typescript
 let jamIni: number = 12.5;
@@ -44,7 +44,7 @@ let sudahSelesai: boolean = false;
 
 ### Any
 
-Variabel dengan tipe `any` pada dasarnya adalah variabel _wildcard_ (serba guna). Variabel dengan tipe `any` dapat menampung tipe nilai apa saja. Kita dapat mendeklarasikan tipe data `any` di TypeScript seperti ini:  
+Variabel dengan tipe `any` pada dasarnya adalah variabel _wildcard_ (serba guna). Variabel dengan tipe `any` dapat menampung tipe nilai apa saja. Kita dapat mendeklarasikan tipe data `any` di TypeScript seperti ini:
 
 ```typescript
 let apel: any
@@ -60,17 +60,17 @@ apel = 5
 console.log(apel)   // 5
 ```
 
-Perhatikan bahwa variabel dengan tipe data `any` dapat kita ubah value nya secara terus menerus ke tipe data lain dan tidak menghasilkan error.  
+Perhatikan bahwa variabel dengan tipe data `any` dapat kita ubah value nya secara terus menerus ke tipe data lain dan tidak menghasilkan error.
 Sekarang pertanyaannya, mengapa kita membutuhkan tipe data `any`? Dalam situasi tertentu, seperti melakukan pemanggilan data sebuah user dari server, kita mungkin akan menerima tipe data variabel yang sangat acak sehingga tipe data `any` sangat berguna dalam kasus ini.
 
 ### Array
 
-Dalam bahasa pemrograman TypeScript, untuk mendeklarasikan sebuah array, kita bisa menggunakan 2 cara:  
+Dalam bahasa pemrograman TypeScript, untuk mendeklarasikan sebuah array, kita bisa menggunakan 2 cara:
 
 1. Menambahkan tanda `[]` setelah mengetikkan tipe data yang kita inginkan, atau
 2. Menggunakan tipe data _generic_.
 
-Berikut merupakan contoh deklarasi sebuah array yang menampung beberapa string.  
+Berikut merupakan contoh deklarasi sebuah array yang menampung beberapa string.
 
 ```typescript
 // cara ke-1
