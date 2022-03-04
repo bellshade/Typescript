@@ -1,4 +1,4 @@
-import * as TypeFile from './type';
+import * as TypeFile from './Type';
 
 test('Mengetes fungsi ApakahTrue', () => {
   expect(TypeFile.ApakahTrue(true)).toBe('benar!');
