@@ -1,4 +1,4 @@
-import * as InterfaceFile from './interface';
+import * as InterfaceFile from './Interface';
 
 test('Mengecek fungsi PertambahanAdanB', () => {
   const dataInputParameter: InterfaceFile.ParameterFunctionPertambahanAdanB = {
