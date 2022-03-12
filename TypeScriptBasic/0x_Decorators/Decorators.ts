@@ -1,18 +1,19 @@
 // Penjelasan akan ditulis nanti.
 
-function gantiArgumenConstructor(constructor: typeof StringUtility): any {
+function gantiArgumenConstructor(constructor: typeof StringUtility): typeof StringUtility {
     return class extends constructor {
         constructor(args: string[]) {
-            super(["Teks pengganti argumen pertama", ...args]);
+            super(['Teks pengganti argumen pertama', ...args]);
         }
-    }
+    };
 }
 
-function buatMethodTidakDapatDiubah(target: any, key: string, descriptor: PropertyDescriptor) {
+function buatMethodTidakDapatDiubah(target: StringUtility, key: string, descriptor: PropertyDescriptor) {
     descriptor.writable = false;
 }
 
-function harusBerupaArray(target: any, key: string) {
+function harusBerupaArray(target: StringUtility, key: string) {
+    // @ts-expect-error ignore error
     if (!Array.isArray(target[key])) {
         throw new Error(`${key} harus berupa array`);
     }
@@ -41,4 +42,4 @@ class StringUtility {
 
 export {
     StringUtility
-}
+};
