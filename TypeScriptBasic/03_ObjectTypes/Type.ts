@@ -7,7 +7,7 @@
 type NilaiBoolean = boolean;
 const benar: NilaiBoolean = true; // jika kita deklarasikan variable benar ke nilai yang bukan tipe data boolean maka akan terjadi error.
 
-function ApakahTrue(inputBenar: NilaiBoolean) {
+function ApakahTrue(inputBenar: NilaiBoolean): string {
   return inputBenar ? 'benar!' : 'salah';
 }
 
