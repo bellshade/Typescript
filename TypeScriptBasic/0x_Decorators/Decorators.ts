@@ -8,33 +8,27 @@ function gantiArgumenConstructor(constructor: typeof StringUtility): typeof Stri
     };
 }
 
-function buatMethodTidakDapatDiubah(target: StringUtility, key: string, descriptor: PropertyDescriptor) {
-    descriptor.writable = false;
-}
-
-function harusBerupaArray(target: StringUtility, key: string) {
-    // @ts-expect-error ignore error
-    if (!Array.isArray(target[key])) {
-        throw new Error(`${key} harus berupa array`);
-    }
+function cekArgumen(target: StringUtility, key: string, descriptor: PropertyDescriptor) {
+    const originalMethod = descriptor.value;
+    descriptor.value = function (...args: unknown[]) {
+        if (args.some(arg => typeof arg !== 'string')) throw Error('Argumen harus berupa string');
+        return originalMethod.apply(this, [args[0], ...args.slice(1)]);
+    };
 }
 
 @gantiArgumenConstructor
 class StringUtility {
-    @harusBerupaArray
     public data: string[];
 
     constructor(data: string[]) {
         this.data = data;
     }
 
-    @buatMethodTidakDapatDiubah
+    @cekArgumen
     sambungData(separator: string): string {
         return this.data.join(separator);
     }
 
-    // Bisa digunakan juga pada accessor property
-    @buatMethodTidakDapatDiubah
     get dataKapital(): string[] {
         return this.data.map(data => data.toUpperCase());
     }
