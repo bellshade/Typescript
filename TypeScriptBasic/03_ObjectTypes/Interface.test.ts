@@ -1,6 +1,6 @@
 import * as InterfaceFile from './Interface';
 
-test('Mengecek fungsi PertambahanAdanB', () => {
+test('[TypeScriptBasic/03_ObjectTypes] Mengecek fungsi PertambahanAdanB', () => {
   const dataInputParameter: InterfaceFile.ParameterFunctionPertambahanAdanB = {
     a: 1,
     b: 2,
@@ -11,7 +11,7 @@ test('Mengecek fungsi PertambahanAdanB', () => {
   expect(dataHasilFungsi === 3).toBe(true);
 });
 
-test('Mengecek fungsi RegisterUser', () => {
+test('[TypeScriptBasic/03_ObjectTypes] Mengecek fungsi RegisterUser', () => {
   const dataHasilFungsi = InterfaceFile.RegisterUser(InterfaceFile.Udin);
   expect(typeof dataHasilFungsi === 'object').toBe(true);
   expect(
