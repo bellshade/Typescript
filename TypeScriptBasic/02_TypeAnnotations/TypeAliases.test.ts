@@ -1,4 +1,4 @@
-import { intro1, intro2, intro3, StringOrNumber } from './typeAliases';
+import { intro1, intro2, intro3, StringOrNumber } from './TypeAliases';
 
 test('Mengecek intro1', () => {
   const data = intro1({name: 'huda', age: 22, country: 'indonesia', hobby: 'ngoding'});

@@ -1,6 +1,6 @@
 export function constructSimpleSymbol (): symbol {
   // Ini adalah contoh symbol
-  let sym = Symbol();
+  const sym = Symbol();
   return sym;
 }
 
